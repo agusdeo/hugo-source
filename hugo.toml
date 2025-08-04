@@ -162,5 +162,5 @@ link = "plugins/youtube-lite.js"
 lazy = true
 
 
-[params.TailwindCSS]
+[[params.TailwindCSS]]
   enable = true
