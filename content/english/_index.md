@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Dokumentasi Masalah Teknikal yang Dialami Pribadi tesitng."
-  content: "Hugoplatsse lalal  is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  content: "Hugoplatsse lalal bbb  is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
   image: "/images/banner.png"
   button:
     enable: true
