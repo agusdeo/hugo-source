@@ -17,7 +17,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.121.2'  # ganti sesuai versi kamu
+          hugo-version: '0.148.2'  # ganti sesuai versi kamu
 
       - name: Build
         run: hugo --minify
