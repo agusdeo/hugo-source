@@ -33,3 +33,6 @@ jobs:
           publish_dir: ./public
           publish_branch: main  # karena repo `agusdeo.github.io` pakai branch `main`
           external_repository: agusdeo/agusdeo.github.io
+
+      - name: Check if token is available
+        run: echo "Token length is ${#{{ secrets.PERSONAL_TOKEN }}}"
