@@ -15,3 +15,11 @@ jsconfig.json
 hugo_stats.json
 go.sum
 yarn.lock
+
+
+# Hugo build output
+/public
+/resources
+
+# Node modules (karena kamu install TailwindCSS)
+node_modules
