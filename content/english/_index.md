@@ -49,5 +49,5 @@ banner:
     button:
       enable: false
       label: ""
-      link: "" ] : #
+      link: "" ]  #
 ---
