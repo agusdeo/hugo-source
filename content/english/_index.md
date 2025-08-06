@@ -10,7 +10,7 @@ banner:
     link: "https://github.com/zeon-studio/hugoplate"
 
 # Features
-features:
+[features:
   - title: "What's Included in Hugoplate"
     image: "/images/service-1.png"
     content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
@@ -49,5 +49,5 @@ features:
     button:
       enable: false
       label: ""
-      link: ""
+      link: "" ] : #
 ---
