@@ -33,4 +33,5 @@ jobs:
           publish_dir: ./public
           publish_branch: main  # karena repo `agusdeo.github.io` pakai branch `main`
           external_repository: agusdeo/agusdeo.github.io
+          force_orphan: true  # 🔥 Ini akan menghapus semua history lama dan push fresh dari 0
 
