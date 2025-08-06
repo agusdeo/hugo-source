@@ -1,8 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Website  Dokumentasi Troubleshooting Masalah Teknikal."
-  meta_title: "Website Dokumentasi"
+  title: "Dokumentasi Troubleshooting Masalah Teknikal"
   content: " Website ini berisikan dokumentasi troubleshoot permasalahan yang sudah pernah di selesaikan agar tidak mengulang dengan waktu yang sama"
   image: "/images/banner.png"
   button:
