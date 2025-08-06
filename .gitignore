@@ -18,7 +18,7 @@ yarn.lock
 
 
 # Hugo build output
-
+/public
 /resources
 
 # Node modules (karena kamu install TailwindCSS)
