@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "Dokumentasi Troubleshooting Masalah Teknikal"
+  title: "Dokumentasi i Troubleshooting Masalah Teknikal"
   content: " Website ini berisikan dokumentasi troubleshoot permasalahan yang sudah pernah di selesaikan agar tidak mengulang dengan waktu yang sama"
   image: "/images/banner.png"
   button:
