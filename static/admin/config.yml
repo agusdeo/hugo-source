@@ -9,9 +9,61 @@ media_folder: "static/images" # Folder tempat upload gambar
 public_folder: "/images"
 
 collections:
-  - name: "blog"
+  - name: "about"
+    label: "About"
+    folder: "content/english/about" # Lokasi postingan Hugo Anda
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "authors"
+    label: "Authors"
+    folder: "content/english/authors" # Lokasi postingan Hugo Anda
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+   - name: "blog"
     label: "Blog"
     folder: "content/english/blog" # Lokasi postingan Hugo Anda
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+- name: "contact"
+    label: "Contact"
+    folder: "content/english/contact" # Lokasi postingan Hugo Anda
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+- name: "pages"
+    label: "Pages"
+    folder: "content/english/pages" # Lokasi postingan Hugo Anda
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+- name: "sections"
+    label: "Sections"
+    folder: "content/english/sections" # Lokasi postingan Hugo Anda
     create: true
     slug: "{{slug}}"
     fields:
