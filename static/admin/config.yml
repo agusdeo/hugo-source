@@ -2,61 +2,55 @@ backend:
   name: github
   repo: agusdeo/hugo-source
   branch: main
-  base_url: https://hugo-source.pages.dev  # Menghapus tanda '/' di paling akhir agar tidak memicu error API
+  base_url: https://pages.dev
   auth_endpoint: /api/auth
 
 media_folder: "static/images"
 public_folder: "/images"
-
-# Mengatur agar tulisan baru langsung terbit tanpa antrean workflow Netlify
 publish_mode: simple 
 
 collections:
-  - name: "about"
-    label: "About"
-    folder: "content/english/about"
-    create: true
-    extension: "md"
-    format: "yaml"
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+  # ==========================================
+  # 1. TIPE FILES (Untuk Halaman Tunggal / Statis)
+  # ==========================================
+  - name: "pages"
+    label: "Halaman Statis"
+    delete: false
+    files:
+      - name: "about"
+        label: "Halaman About"
+        file: "content/english/about/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "authors"
-    label: "Authors"
-    folder: "content/english/authors"
-    create: true
-    extension: "md"
-    format: "yaml"
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - name: "contact"
+        label: "Halaman Contact"
+        file: "content/english/contact/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
 
+  # ==========================================
+  # 2. TIPE FOLDER (Untuk Konten yang Bisa Terus Ditambah)
+  # ==========================================
   - name: "blog"
     label: "Blog"
     folder: "content/english/blog"
     create: true
-    extension: "md"
-    format: "yaml"
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" } 
-   
-  - name: "contact"
-    label: "Contact"
-    folder: "content/english/contact"
+
+  - name: "authors"
+    label: "Authors / Penulis"
+    folder: "content/english/authors"
     create: true
-    extension: "md"
-    format: "yaml"
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -64,12 +58,10 @@ collections:
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "pages"
-    label: "Pages"
+  - name: "regular_pages"
+    label: "Pages Tambahan"
     folder: "content/english/pages"
     create: true
-    extension: "md"
-    format: "yaml"
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -78,14 +70,11 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "sections"
-    label: "Sections"
+    label: "Sections Website"
     folder: "content/english/sections"
     create: true
-    extension: "md"
-    format: "yaml"
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
       - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Body", name: "body", widget: "markdown" }
