@@ -14,6 +14,6 @@ social:
     icon: fa-brands fa-linkedin
     link: https://linkedin.com
 date: 2026-09-01T00:33:00+07:00
-draft: true
+draft: false
 ---
 Adalah Seorang yang telah bekerja di Technical Support sepanjang karirnya
