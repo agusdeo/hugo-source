@@ -1,8 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
   repo: agusdeo/hugo-source # Repositori GitHub Anda
   branch: main # Branch utama Anda
-
+  base_url: https://hugo-source.pages.dev/ # WAJIB diisi URL Cloudflare Anda
+  auth_endpoint: /auth
+  
 media_folder: "static/images" # Folder tempat upload gambar
 public_folder: "/images"
 
