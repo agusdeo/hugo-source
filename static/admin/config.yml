@@ -11,7 +11,7 @@ public_folder: "/images"
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/english/" # Lokasi postingan Hugo Anda
+    folder: "content/english/blog" # Lokasi postingan Hugo Anda
     create: true
     slug: "{{slug}}"
     fields:
