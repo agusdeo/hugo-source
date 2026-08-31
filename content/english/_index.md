@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Explore Troubleshooting"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "https://hugo-source.pages.dev/blog/"
 
 
 # Features
