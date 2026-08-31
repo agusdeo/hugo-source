@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: agusdeo/hugo-source # Repositori GitHub Anda
+  branch: main # Branch utama Anda
+
+media_folder: "static/images" # Folder tempat upload gambar
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/posts" # Lokasi postingan Hugo Anda
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
