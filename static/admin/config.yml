@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: agusdeo/hugo-source # Repositori GitHub Anda
   branch: main # Branch utama Anda
 
