@@ -2,7 +2,7 @@ backend:
   name: github
   repo: agusdeo/hugo-source
   branch: main
-  base_url: https://pages.dev
+  base_url: https://hugo-source.pages.dev/admin
   auth_endpoint: /api/auth
 
 media_folder: "static/images"
